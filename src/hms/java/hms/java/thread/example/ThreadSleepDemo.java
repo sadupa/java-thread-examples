@@ -23,7 +23,7 @@ public class ThreadSleepDemo {
 
             System.out.println("["+new Date() + "] " + "Thread gonna sleep");
             //Pause for 4 seconds
-            Thread.sleep(4000);
+            Thread.sleep(5000);
             //Print a message
             System.out.println("["+new Date() + "] " + "Thread wakeup");
 
