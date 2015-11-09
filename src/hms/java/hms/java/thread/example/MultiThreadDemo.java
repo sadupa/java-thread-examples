@@ -56,7 +56,7 @@ public class MultiThreadDemo {
 
     public static void main(String[] args) {
 
-        Thread t1 = new Thread(new SampleThread(5000), "Thread-1");
+        Thread t1 = new Thread(new SampleThread(3000), "Thread-1");
         Thread t2 = new Thread(new SampleThread(), "Thread-2");
 
         threadMessage("Starting to run threads");

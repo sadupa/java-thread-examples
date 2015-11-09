@@ -20,7 +20,6 @@ import java.util.concurrent.Executors;
 public class ExecutorServiceDemo {
 
     private static class SampleRunnable implements Runnable {
-
         @Override
         public void run() {
             threadMessage("Running thread");
@@ -28,19 +27,29 @@ public class ExecutorServiceDemo {
     }
 
     public static void main(String[] args) {
-        ExecutorService executorService = Executors.newFixedThreadPool(10);
+        ExecutorService executorService = Executors.newFixedThreadPool(5);
 
         Runnable r1 = new SampleRunnable();
         Runnable r2 = new SampleRunnable();
         Runnable r3 = new SampleRunnable();
         Runnable r4 = new SampleRunnable();
         Runnable r5 = new SampleRunnable();
+        Runnable r6 = new SampleRunnable();
+        Runnable r7 = new SampleRunnable();
+        Runnable r8 = new SampleRunnable();
+        Runnable r9 = new SampleRunnable();
+        Runnable r10 = new SampleRunnable();
 
         executorService.execute(r1);
         executorService.execute(r2);
         executorService.execute(r3);
         executorService.execute(r4);
         executorService.execute(r5);
+        executorService.execute(r6);
+        executorService.execute(r7);
+        executorService.execute(r8);
+        executorService.execute(r9);
+        executorService.execute(r10);
 
         executorService.shutdown();
 
